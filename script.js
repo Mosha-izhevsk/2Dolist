@@ -42,6 +42,7 @@ function addTask(text = null, completed = false) {
 
     taskItem.querySelector(".delete-btn").addEventListener("click", function () {
         taskItem.remove();
+        alert("Task removed!");
     });
 
     taskList.appendChild(taskItem);
