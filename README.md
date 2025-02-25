@@ -10,7 +10,7 @@ A simple To-Do List app built with HTML, CSS, and JavaScript. It allows users to
 ## Demo
 You can view the live demo of this app on GitHub Pages (if hosted).
 
-[Live Demo Link](https://your-username.github.io/your-repo/)
+[Live Demo Link](https://Mosha-izhevsk/2Dolist/)
 
 ## Installation
 
