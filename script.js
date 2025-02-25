@@ -46,6 +46,9 @@ function addTask(text = null, completed = false) {
 
     taskList.appendChild(taskItem);
     taskInput.value = "";
+
+    // Alert for the task
+    alert(`Task added: ${taskText}`);
 }
 
 // Load tasks from GitHub when page loads
@@ -53,4 +56,8 @@ document.addEventListener("DOMContentLoaded", loadTasks);
 
 // Event Listeners
 addTaskBtn.addEventListener("click", () => addTask());
-taskInput.addEventListener("keypress ▋
+taskInput.addEventListener("keypress", (e) => {
+    if (e.key === 'Enter') {
+        addTask();
+    }
+});
