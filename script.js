@@ -42,7 +42,6 @@ function addTask(text = null, completed = false) {
 
     taskItem.querySelector(".delete-btn").addEventListener("click", function () {
         taskItem.remove();
-        alert("Task removed!");
     });
 
     taskList.appendChild(taskItem);
@@ -54,6 +53,4 @@ document.addEventListener("DOMContentLoaded", loadTasks);
 
 // Event Listeners
 addTaskBtn.addEventListener("click", () => addTask());
-taskInput.addEventListener("keypress", (event) => {
-    if (event.key === "Enter") addTask();
-});
+taskInput.addEventListener("keypress ▋
