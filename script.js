@@ -41,7 +41,10 @@ function addTask(text = null, completed = false) {
     });
 
     taskItem.querySelector(".delete-btn").addEventListener("click", function () {
-        taskItem.remove();
+        const confirmed = confirm("Are you sure you want to delete this task?");
+        if (confirmed) {
+            taskItem.remove();
+        }
     });
 
     taskList.appendChild(taskItem);
